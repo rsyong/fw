@@ -272,15 +272,15 @@
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 none" data-n="8">
 			<div class="kuai2">
 				<div class="kuaidiv2" id="main8"></div>
-				<div class="mainname">足内翻
-					<div class="textcenter">|</div>足外翻</div>
+				<div class="mainname">外展
+					<div class="textcenter">|</div>内收</div>
 			</div>
 		</div>
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 none" data-n="9">
 			<div class="kuai2">
 				<div class="kuaidiv2" id="main9"></div>
-				<div class="mainname">足内翻
-					<div class="textcenter">|</div>足外翻</div>
+				<div class="mainname">外展
+					<div class="textcenter">|</div>内收</div>
 			</div>
 		</div>
 	</div>

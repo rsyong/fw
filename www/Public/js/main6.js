@@ -3,7 +3,7 @@ var myChart = echarts.init(document.getElementById('main6'));
 // 指定图表的配置项和数据
 option = {
 	title: {
-		text: '仰角',
+		text: '内外翻角',
 		textStyle: {
 			color: '#eee',
 			fontSize:16,

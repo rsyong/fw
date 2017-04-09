@@ -20,7 +20,7 @@
 	}
 	.hi,.hid{
 		margin-top: 20px;
-		width: 160px;
+		width: 220px;
 		height: 160px;
 		overflow: hidden;
 		border-radius: 10px;

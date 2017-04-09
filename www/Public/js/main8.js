@@ -3,7 +3,7 @@ var myChart = echarts.init(document.getElementById('main8'));
 // 指定图表的配置项和数据
 option = {
 	title: {
-		text: '仰角',
+		text: '内收/外展角',
 		textStyle: {
 			color: '#eee',
 			fontSize:16,
