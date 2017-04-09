@@ -1,0 +1,73 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>小爱科技—details</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link rel="shortcut icon" href="/Public/img/logod.ico">
+<link rel="stylesheet" href="/Public/lib/bootstrap/bootstrap.min.css" />
+<link rel="stylesheet" href="/Public/css/index.css" />
+<script type="text/javascript" src="/Public/lib/jq/jquery-3.1.0.min.js" ></script>
+</head>
+<body>
+	<div class="back"></div>
+	<div class="closed">
+		<img src="/Public/img/close.svg"/>
+		<div class="clear"></div>
+	</div>
+	<div class="container">
+		<div class="user">
+			<div class="portrait">
+				<img src="/Public/img/logo.jpg" />
+			</div>
+			<div class="name">姓名</div>
+			<div class="clear"></div>
+		</div>
+		<div class="title">
+			<div class="row">
+				<ul class="title_ul col-xs-12 col-lg-2 col-md-2 col-sm-2">
+					<li class="active">跑步</li>
+					<li>行走</li>
+				</ul>
+				<ul class="title_ul2 col-xs-12 col-lg-10 col-md-10 col-sm-10">
+					<li class="active">全部</li>
+					<li>半年</li>
+					<li>本月</li>
+					<li>本周</li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="details"></div>
+	</div>
+	<script type="text/javascript">
+		$(".portrait img").click(function(){
+			location.href="detailstwo.html"
+		})
+		$(".details").load("details_load.html .all");
+		$.getScript("/Public/js/details_load.js");
+		$(".close img").click(function(){
+			window.location.replace("index.html")
+		})
+		
+		window.onload=function(){
+			$.ajax({
+				type:"get",
+				url:"<?php echo U('Index/getname');?>",
+				async:true,
+				data:{
+					phone:localStorage.user
+				},
+				success:function(data){
+					// $(".portrait img").attr("src","");//得到用户头像
+					$(".name").html(data);//得到用户名字
+				}
+			});
+		}
+		$(".close img").click(function(){
+			localStorage.removeItem("user");
+			window.location.replace("index.html")
+		})
+	</script>
+</body>
+</html>
