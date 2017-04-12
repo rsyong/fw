@@ -20,7 +20,7 @@
 	}
 	.hi,.hid{
 		margin-top: 20px;
-		width: 220px;
+		width: 215px;
 		height: 160px;
 		overflow: hidden;
 		border-radius: 10px;
@@ -38,6 +38,22 @@
 	}
 	.kuaidiv2{
 		height: 170px;
+	}
+	.over-hide{
+		border: 1px solid #666;
+		border-radius: 5px;
+		overflow: hidden !important; 
+	}
+	.kuai{
+		margin-top: 0px;
+		transform: scale(1,1);
+		min-width: 200px;
+		padding: 16px;
+		height: 160px;
+		background: none;
+	}
+	.kuaidiv{
+		height: 140px;
 	}
 </style>
 </head>
@@ -148,7 +164,8 @@
 	</div>-->
 	<div class="borad">
 		<div class="over-hide hi mt" data-n="0">
-			<div class="kuai">
+			<div class="t">着地类型</div>
+			<!--<div class="kuai">
 				<table class="table1">
 					<tr>
 						<td colspan="2">着地</td>
@@ -199,11 +216,12 @@
 						<td>1.1g-1.5g</td>
 					</tr>
 				</table>
-			</div>
+			</div>-->
 		</div>
 	</div>
 	<div class="over-hide hi mt"  data-n="3">
-		<div class="kuai" style="min-width: 1000px;">
+		<div class="t">空间参数</div>
+		<!--<div class="kuai" style="min-width: 1000px;">
 			<table class="table3">
 				<tr>
 					<td colspan="6">空间参数</td>
@@ -269,10 +287,11 @@
 					<td class="color_hui">0.95s~1.25s</td>
 				</tr>
 			</table>
-		</div>
+		</div>-->
 	</div>
 	<div class="over-hide hi mt" data-n="1">
-		<div class="kuai">
+		<div class="t">步态周期</div>
+		<!--<div class="kuai">
 			<div class="kuaidiv" id="main1"></div>
 			<div class="kuaidiv" id="main2"></div>
 			<table class="table2">
@@ -313,7 +332,7 @@
 					<td class="color_hui">0.95s~1.25s</td>
 				</tr>
 			</table>
-		</div>
+		</div>-->
 	</div>
 	
 	<div class="over-hide hi mt"  data-n="2">
@@ -322,29 +341,27 @@
 		</div>
 	</div>
 	<div class="over-hide hi"  data-n="10">
+		<!--<div class="t">转向角-柱状</div>-->
 		<div class="kuai">
-			<div class="kuaidiv" id="main10" style="width: 100%;height:460px;"></div>
+			<div class="kuaidiv" id="main10"></div>
 		</div>
 	</div>
 	<div class="over-hide hi"  data-n="11">
+		<!--<div class="t">着地类型-点状</div>-->
 		<div class="kuai">
-			<div class="kuaidiv" id="main11" style="width: 100%;height:460px;"></div>
+			<div class="kuaidiv" id="main11"></div>
 		</div>
 	</div>
 	<div class="over-hide hi" data-n="12">
-		<div class="kuai" style="min-width: 1000px;position: relative;">
-			<div class="kuaidiv" id="main12" style="width: 100%;height:600px;"></div>
-			<div class="main12name1">着地内翻脚</div>
-			<div class="main12name2">着地仰角</div>
+		<!--<div class="t">着地类型</div>-->
+		<div class="kuai">
+			<div class="kuaidiv" id="main12"></div>
 		</div>
 	</div>
 	<div class="over-hide hi" data-n="13">
-		<div class="kuai" style="min-width: 1000px;position: relative;">
-			<div class="kuaidiv" id="main13" style="width: 100%;height:600px;"></div>
-			<div class="main12name1">内
-				<div class="textcenter">|</div>内外翻幅度
-				<div class="textcenter">|</div>外</div>
-			<div class="main12name2">内 — 内收/外展幅度 — 外 </div>
+		<!--<div class="t">着地过程</div>-->
+		<div class="kuai">
+			<div class="kuaidiv" id="main13" ></div>
 		</div>
 	</div>
 	
@@ -438,10 +455,10 @@
 <script type="text/javascript" src="__PUBLIC__/js/main7.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/main8.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/main9.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/main10.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/main11.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/main12.js"></script>
-<script type="text/javascript" src="__PUBLIC__/js/main13.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/smll/main10.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/smll/main11.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/smll/main12.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/smll/main13.js"></script>
 <script type="text/javascript" src="__PUBLIC__/js/mydeatilstwo.js"></script>
 </body>
 

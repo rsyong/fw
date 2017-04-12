@@ -4,7 +4,7 @@ var myChart = echarts.init(document.getElementById('main3'));
 option = {
 	title: {
 		text: '步频变化',
-		left: '1%',
+		left: '0%',
 		textStyle: {
 			color: '#eee',
 			fontSize:16,
@@ -20,10 +20,10 @@ option = {
 	},
 	color: ['#27c7f4'],
 	grid: {
-		left: '1%',
+		left: '2%',
 		right: '1%',
 		bottom: '3%',
-		top: '16%',
+		top: '60px',
 		containLabel: true
 	},
 	textStyle: {
