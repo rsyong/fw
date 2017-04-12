@@ -27,21 +27,23 @@
 		float: left;
 		margin-right: 10px;
 		color: #fff;
+		background: rgba(0,0,0,.3);
 	}
 	.hid{
-		border: 1px solid #666;
 		padding: 10px;
 	}
 	.t{
-		line-height: 160px;
 		text-align: center;
+		line-height: 120px;
+	}
+	.t img{
+		width: 20%;
 	}
 	.kuaidiv2{
 		height: 170px;
 	}
 	.over-hide{
-		border: 1px solid #666;
-		border-radius: 5px;
+		border-radius: 10px;
 		overflow: hidden !important; 
 	}
 	.kuai{
@@ -55,13 +57,27 @@
 	.kuaidiv{
 		height: 140px;
 	}
+	.textd{
+		position: absolute;
+		margin-top: -70px;
+		width: 190px;
+	}
+	.textds{
+		width: 215px;
+	}
 </style>
 </head>
 <body>
 <div class="back"></div>
 <div class="content">
-	<div class="hi hid t" data-n="xm">姓名</div>
-	<div class="hi hid t" data-n="xq">详情</div>
+	<div class="hi hid t" data-n="xm">
+		<img src="__PUBLIC__/img/user.png" />
+		<div class="textd">个人信息</div>
+	</div>
+	<div class="hi hid t" data-n="xq">
+		<img src="__PUBLIC__/img/s3.png" />
+		<div class="textd">详情</div>
+	</div>
 	<!--<div class="row">
 		<div class="col-xs-12 col-lg-4 col-md-4 col-sm-12">
 			<div class="conten_left" style="height: 248px;">
@@ -111,60 +127,12 @@
 		</div>
 	</div>-->
 	<!--<div class="clear"></div>-->
-	
-	
-	
-	
-	<div class="hi hid" data-n="4"><div class="kuaidiv2" id="main4"></div></div>
-	<div class="hi hid" data-n="5"><div class="kuaidiv2" id="main5"></div></div>
-	<div class="hi hid" data-n="6"><div class="kuaidiv2" id="main6"></div></div>
-	<div class="hi hid" data-n="7"><div class="kuaidiv2" id="main7"></div></div>
-	<div class="hi hid" data-n="8"><div class="kuaidiv2" id="main8"></div></div>
-	<div class="hi hid" data-n="9"><div class="kuaidiv2" id="main9"></div></div>
-	<div class="clear"></div>
-	<!--<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<div class="kuai2 hi">
-				<div class="kuaidiv2" id="main4"></div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<div class="kuai2">
-				<div class="kuaidiv2" id="main5"></div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<div class="kuai2">
-				<div class="kuaidiv2" id="main6"></div>
-				<div class="mainname">足内翻
-					<div class="textcenter">|</div>足外翻</div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<div class="kuai2">
-				<div class="kuaidiv2" id="main7"></div>
-				<div class="mainname">足内翻
-					<div class="textcenter">|</div>足外翻</div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<div class="kuai2">
-				<div class="kuaidiv2" id="main8"></div>
-				<div class="mainname">足内翻
-					<div class="textcenter">|</div>足外翻</div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-			<div class="kuai2">
-				<div class="kuaidiv2" id="main9"></div>
-				<div class="mainname">足内翻
-					<div class="textcenter">|</div>足外翻</div>
-			</div>
-		</div>
-	</div>-->
 	<div class="borad">
 		<div class="over-hide hi mt" data-n="0">
-			<div class="t">着地类型</div>
+			<div class="t">
+				<img src="__PUBLIC__/img/s4.png" />
+				<div class="textd textds">着地类型</div>
+			</div>
 			<!--<div class="kuai">
 				<table class="table1">
 					<tr>
@@ -220,7 +188,10 @@
 		</div>
 	</div>
 	<div class="over-hide hi mt"  data-n="3">
-		<div class="t">空间参数</div>
+		<div class="t">
+			<img src="__PUBLIC__/img/s2.png" />
+			<div class="textd textds">空间参数</div>
+		</div>
 		<!--<div class="kuai" style="min-width: 1000px;">
 			<table class="table3">
 				<tr>
@@ -290,7 +261,10 @@
 		</div>-->
 	</div>
 	<div class="over-hide hi mt" data-n="1">
-		<div class="t">步态周期</div>
+		<div class="t">
+			<img src="__PUBLIC__/img/s1.png" />
+			<div class="textd textds">步态周期</div>
+		</div>
 		<!--<div class="kuai">
 			<div class="kuaidiv" id="main1"></div>
 			<div class="kuaidiv" id="main2"></div>
@@ -334,6 +308,56 @@
 			</table>
 		</div>-->
 	</div>
+	
+	<div class="hi hid" data-n="4"><div class="kuaidiv2" id="main4"></div></div>
+	<div class="hi hid" data-n="5"><div class="kuaidiv2" id="main5"></div></div>
+	<div class="hi hid" data-n="6"><div class="kuaidiv2" id="main6"></div></div>
+	<div class="hi hid" data-n="7"><div class="kuaidiv2" id="main7"></div></div>
+	<div class="hi hid" data-n="8"><div class="kuaidiv2" id="main8"></div></div>
+	<div class="hi hid" data-n="9"><div class="kuaidiv2" id="main9"></div></div>
+	<!--<div class="row">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="kuai2 hi">
+				<div class="kuaidiv2" id="main4"></div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="kuai2">
+				<div class="kuaidiv2" id="main5"></div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="kuai2">
+				<div class="kuaidiv2" id="main6"></div>
+				<div class="mainname">足内翻
+					<div class="textcenter">|</div>足外翻</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="kuai2">
+				<div class="kuaidiv2" id="main7"></div>
+				<div class="mainname">足内翻
+					<div class="textcenter">|</div>足外翻</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="kuai2">
+				<div class="kuaidiv2" id="main8"></div>
+				<div class="mainname">足内翻
+					<div class="textcenter">|</div>足外翻</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			<div class="kuai2">
+				<div class="kuaidiv2" id="main9"></div>
+				<div class="mainname">足内翻
+					<div class="textcenter">|</div>足外翻</div>
+			</div>
+		</div>
+	</div>-->
+	
+	
+	
 	
 	<div class="over-hide hi mt"  data-n="2">
 		<div class="kuai">

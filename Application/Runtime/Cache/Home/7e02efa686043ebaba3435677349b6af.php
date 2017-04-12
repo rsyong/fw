@@ -17,7 +17,7 @@
 		display: none;
 	}
 	.container{
-		padding: 80px 0px;
+		padding: 30px 0px;
 	}
 </style>
 </head>
@@ -26,7 +26,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-xs-12 col-lg-12 col-md-12 col-sm-12">
-			<div class="conten_left none" data-n="xm">
+			<div class="conten_left none" data-n="xm" style="margin-top: 60px;">
 				<div class="touxiang"><img src="/Public/img/logo.jpg" /></div>
 				<div class="ming xinxi">姓名：--</div>
 				<div class="p"><span class="xinxi">年龄：--</span><span class="tizhong xinxi">体重：--</span>
